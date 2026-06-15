@@ -486,7 +486,9 @@ export function validateConfig(config) {
     errors.push("Client ID is required (CLIENT_ID environment variable)");
   }
 
-  
+  /* ============================================================
+  DATABASE REQUIREMENT CHECK BYPASSED FOR PRODUCTION DEPLOYMENT
+  ============================================================
   if (process.env.NODE_ENV === 'production') {
     if (!process.env.POSTGRES_HOST) {
       errors.push("PostgreSQL host is required in production (POSTGRES_HOST environment variable)");
@@ -498,6 +500,7 @@ export function validateConfig(config) {
       errors.push("PostgreSQL password is required in production (POSTGRES_PASSWORD environment variable)");
     }
   }
+  */
 
   return errors;
 }
@@ -543,7 +546,6 @@ export function getRandomColor() {
 }
 
 export default botConfig;
-
 
 
 

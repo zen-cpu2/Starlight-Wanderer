@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "The Quintessential Quintuplets (yes even bots watch peak🔥)",
+        name: "The Quintessential Quintuplets (yes even bots watch peak)",
         // Activity type number (0 = Playing).
-        type: 3, 
+        type: "WATCHING", 
       },
     ],
   },
